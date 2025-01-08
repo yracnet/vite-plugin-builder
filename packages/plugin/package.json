@@ -1,0 +1,53 @@
+{
+  "name": "vite-plugin-builder",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A Vite plugin that creates a dual compilation setup for SSR (Server-Side Rendering) and CSR (Client-Side Rendering) to build both server and client entry points in one project.",
+  "keywords": [
+    "SSR",
+    "CSR",
+    "SPA",
+    "Vite",
+    "plugin",
+    "server-side rendering",
+    "client-side rendering",
+    "dual compilation"
+  ],
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "Willyams Yujra <yracnet@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yracnet/vite-plugin-builder"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "homepage": "https://github.com/yracnet/vite-plugin-builder",
+  "bugs": "https://github.com/yracnet/vite-plugin-builder/issues",
+  "scripts": {
+    "build": "tsup",
+    "tar": "yarn pack",
+    "prepublish": "yarn build",
+    "prepack": "yarn build"
+  },
+  "dependencies": {
+    "deepmerge": "^4.3.1"
+  },
+  "peerDependencies": {
+    "vite": "^4||^5||^6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0"
+  }
+}

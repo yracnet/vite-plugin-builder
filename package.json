@@ -1,0 +1,12 @@
+{
+  "name": "builder",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/yracnet/vite-plugin-builder.git",
+  "author": "Willyams Yujra <yracnet@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/plugin",
+    "packages/examples/*"
+  ]
+}

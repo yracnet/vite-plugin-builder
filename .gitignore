@@ -1,0 +1,6 @@
+**/.api
+**/*.tgz
+**/.yarn
+**/.up-force
+**/.fetch-client
+**/node_modules
